@@ -31,7 +31,9 @@
 
   <title>tarea7_codelabs</title>
   <link rel="manifest" href="manifest.json">
-
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  
   <script>
     // The value below is injected by flutter build, do not touch.
     const serviceWorkerVersion = null;
@@ -54,6 +56,25 @@
         }
       });
     });
+  </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA3miDiGcS2pb-Zu7gBq0tsfymS-iiUW_8",
+      authDomain: "fir-flutter-codelab-22a94.firebaseapp.com",
+      projectId: "fir-flutter-codelab-22a94",
+      storageBucket: "fir-flutter-codelab-22a94.appspot.com",
+      messagingSenderId: "353228889357",
+      appId: "1:353228889357:web:117fe1733cff6b3e7ce444"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
   </script>
 </body>
 </html>
